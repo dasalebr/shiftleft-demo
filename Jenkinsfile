@@ -36,7 +36,7 @@ pipeline {
             steps {
                 dir('code-dir') {
                     git branch: '{branch}',
-                    url: https://github.com/dasalebr/goof.git
+                    url: 'https://github.com/iainrose/docker-goof
                 }
                 sh '''
                     export CHKP_CLOUDGUARD_ID=$CHKP_CLOUDGUARD_CREDS_USR
